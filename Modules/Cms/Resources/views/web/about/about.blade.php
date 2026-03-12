@@ -1,12 +1,14 @@
-@section('meta_title',  'About Elegant Training Center | Best Training Institute in Dubai')
-@section('meta_description', 'Learn about Elegant Training Center – a KHDA-approved professional training institute in Dubai offering certified courses in IT, Finance, Design, Languages, and more.')
-@section('title', 'About US')
-
 @if ($contents['about-us-1']->seo)
     @section('meta_tags', $contents['about-us-1']->seo->meta_contents)
     @section('meta_title', $contents['about-us-1']->seo->meta_title)
     @section('meta_description', $contents['about-us-1']->seo->meta_description)
+@else
+    @section('meta_title',  'About Elegant Training Center | Best Training Institute in Dubai')
+    @section('meta_description', 'Learn about Elegant Training Center – a KHDA-approved professional training institute in Dubai offering certified courses in IT, Finance, Design, Languages, and more.')
 @endif
+
+@section('title', 'About US')
+
 @section('canonical', url()->current())
 
 @push('style')

@@ -1,5 +1,12 @@
-@section('meta_title',  'Elegant Training Center Dubai | KHDA Approved Training Center')
-@section('meta_description', 'At Elegant Training Center, we are dedicated to providing high-quality training programs. We are KHDA approved and Autodesk Authorized Training Center.')
+@if ($contents['elegant-training-1']->seo)
+    @section('meta_tags', $contents['elegant-training-1']->seo->meta_contents)
+    @section('meta_title', $contents['elegant-training-1']->seo->meta_title)
+    @section('meta_description', $contents['elegant-training-1']->seo->meta_description)
+@else
+    @section('meta_title',  'Elegant Training Center Dubai | KHDA Approved Training Center')
+    @section('meta_description', 'At Elegant Training Center, we are dedicated to providing high-quality training programs. We are KHDA approved and Autodesk Authorized Training Center.')
+@endif
+
 @section('title', 'Home')
 
 @push('style')

@@ -1,12 +1,14 @@
-@section('meta_title',  'Corporate Training in Dubai – Upskill Your Workforce')
-@section('meta_description', 'KHDA-approved corporate training in Dubai. Tailored programs for companies in IT, Finance, Management, and Soft Skills. Onsite & online sessions available.')
-@section('title', 'Corporate Training')
-
 @if ($contents['corporate-training']->seo)
     @section('meta_tags', $contents['corporate-training']->seo->meta_contents)
     @section('meta_title', $contents['corporate-training']->seo->meta_title)
     @section('meta_description', $contents['corporate-training']->seo->meta_description)
+@else
+    @section('meta_title',  'Corporate Training in Dubai – Upskill Your Workforce')
+    @section('meta_description', 'KHDA-approved corporate training in Dubai. Tailored programs for companies in IT, Finance, Management, and Soft Skills. Onsite & online sessions available.')
 @endif
+
+@section('title', 'Corporate Training')
+
 @section('canonical', url()->current())
 
 

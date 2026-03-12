@@ -1,14 +1,14 @@
-@section('meta_title',  'Careers at Elegant Training Center | Join Our Team in Dubai')
-@section('meta_description', "Explore exciting job opportunities at Elegant Training Center in Dubai. We're hiring passionate and skilled professionals to join our growing education team.")
-@section('title', app()->getLocale() == 'en' ? $translations['we_are_hiring']['value_en'] : $translations['we_are_hiring']['value_ar'])
-
 @if ($contents['hiring']->seo)
     @section('meta_tags', $contents['hiring']->seo->meta_contents)
     @section('meta_title', $contents['hiring']->seo->meta_title)
     @section('meta_description', $contents['hiring']->seo->meta_description)
-@section('canonical', url()->current())
-
+@else
+    @section('meta_title',  'Careers at Elegant Training Center | Join Our Team in Dubai')
+    @section('meta_description', "Explore exciting job opportunities at Elegant Training Center in Dubai. We're hiring passionate and skilled professionals to join our growing education team.")
 @endif
+
+    @section('title', app()->getLocale() == 'en' ? $translations['we_are_hiring']['value_en'] : $translations['we_are_hiring']['value_ar'])
+    @section('canonical', url()->current())
 
 @push('style')
     <link rel="stylesheet" type="text/css" href="{{ mix('css/web/hiring/hiring.css') }}">

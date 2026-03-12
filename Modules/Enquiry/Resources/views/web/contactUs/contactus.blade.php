@@ -1,5 +1,12 @@
-@section('meta_title',  'Contact Elegant Training Center | Training Center in Al Barsha Dubai')
-@section('meta_description', "Get in touch with Elegant Training Center located in Al Barsha, Dubai. Call, email, or visit us for inquiries about training courses, schedules, and corporate services.")
+@if ($contents['contact-us']->seo)
+    @section('meta_tags', $contents['contact-us']->seo->meta_contents)
+    @section('meta_title', $contents['contact-us']->seo->meta_title)
+    @section('meta_description', $contents['contact-us']->seo->meta_description)
+@else
+    @section('meta_title',  'Contact Elegant Training Center | Training Center in Al Barsha Dubai')
+    @section('meta_description', "Get in touch with Elegant Training Center located in Al Barsha, Dubai. Call, email, or visit us for inquiries about training courses, schedules, and corporate services.")
+@endif
+
 @section('title', 'Contact Us')
 
 @push('script')
