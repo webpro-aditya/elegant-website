@@ -1,0 +1,20 @@
+{
+    "User": true,
+    "Settings": true,
+    "Auth": true,
+    "Test": true,
+    "Home": true,
+    "Course": true,
+    "Cms": true,
+    "CourseActivity": true,
+    "Enquiry": true,
+    "Seo": true,
+    "Blog": true,
+    "Gallery": true,
+    "Career": true,
+    "Faq": true,
+    "Author": true,
+    "Resources": true,
+    "Subscriber": true,
+    "Translation": true
+}

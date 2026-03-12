@@ -1,0 +1,12 @@
+<?php
+
+namespace Modules\Settings\Entities;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Currency extends Model
+{
+    protected $fillable = [
+        'name', 'name_plural', 'code', 'symbol', 'decimals',
+    ];
+}

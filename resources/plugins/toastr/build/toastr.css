@@ -1,0 +1,173 @@
+/* =========================================================
+   TOASTR – ENHANCED UI (Bigger, Cleaner, More Attractive)
+   ========================================================= */
+
+/* ---------- Base ---------- */
+.toastr-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.toastr-message {
+  word-wrap: break-word;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.toastr-message a,
+.toastr-message label {
+  color: #ffffff;
+}
+
+.toastr-message a:hover {
+  color: #e0e0e0;
+  text-decoration: none;
+}
+
+/* ---------- Close Button ---------- */
+.toastr-close-button {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.toastr-close-button:hover {
+  opacity: 1;
+}
+
+/* ---------- Container Positions ---------- */
+.toastr-top-right { top: 16px; right: 16px; }
+.toastr-top-left { top: 16px; left: 16px; }
+.toastr-bottom-right { bottom: 16px; right: 16px; }
+.toastr-bottom-left { bottom: 16px; left: 16px; }
+.toastr-top-center,
+.toastr-bottom-center {
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* ---------- Main Container ---------- */
+#toastr-container {
+  position: fixed;
+  z-index: 999999;
+  pointer-events: none;
+}
+
+#toastr-container * {
+  box-sizing: border-box;
+}
+
+/* ---------- Toast Box ---------- */
+#toastr-container > div {
+  position: relative;
+  pointer-events: auto;
+  overflow: hidden;
+  margin: 0 0 12px;
+  padding: 20px 22px 20px 64px;
+  width: 380px;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 26px 26px;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  opacity: 0.96;
+  transition: all 0.2s ease;
+}
+
+#toastr-container > div:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* ---------- Centered Toasts ---------- */
+#toastr-container.toastr-top-center > div,
+#toastr-container.toastr-bottom-center > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Toast Types ---------- */
+.toastr {
+  background-color: #1f1f1f;
+}
+
+.toastr-success {
+  background-color: #2e7d32;
+}
+
+.toastr-error {
+  background-color: #c62828;
+}
+
+.toastr-info {
+  background-color: #1565c0;
+}
+
+.toastr-warning {
+  background-color: #ef6c00;
+}
+
+/* ---------- Icons ---------- */
+#toastr-container > .toastr-success {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA...");
+}
+
+#toastr-container > .toastr-error {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA...");
+}
+
+#toastr-container > .toastr-info {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA...");
+}
+
+#toastr-container > .toastr-warning {
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA...");
+}
+
+/* ---------- Progress Bar ---------- */
+.toastr-progress {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 0 8px 8px;
+}
+
+/* ---------- RTL Support ---------- */
+#toastr-container > div.rtl {
+  direction: rtl;
+  padding: 20px 64px 20px 22px;
+  background-position: right 20px center;
+}
+
+.rtl .toastr-close-button {
+  right: auto;
+  left: 10px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 480px) {
+  #toastr-container > div {
+    width: calc(100% - 24px);
+    padding: 16px 18px 16px 56px;
+  }
+
+  .toastr-title {
+    font-size: 16px;
+  }
+
+  .toastr-message {
+    font-size: 14px;
+  }
+}

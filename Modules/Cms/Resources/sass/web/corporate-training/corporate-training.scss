@@ -1,0 +1,59 @@
+@import "../../../../../../resources/sass/init";
+.training-list {
+    background: #F0F6FC;
+    height: 160px;
+    overflow: auto;
+    li {
+        line-height: 28px;
+    }
+}
+
+h2 {
+    font-family: "Raleway-SemiBold";
+    font-size: 36px;
+}
+
+.years-experience {
+    background: #0F75BC;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 180px;
+    h5 {
+        color: #fff;
+        font-size: 24px;
+    }
+    p {
+        color: #fff;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991px) {
+    h2 {
+        font-size: 21px;
+    }
+    .training-list {
+        background: #F0F6FC;
+        height: auto;
+    }
+}
+
+html:lang(ar) {
+    @media (min-width: 992px) {
+        .pe-lg-20 {
+            padding-right: 10px !important;
+            padding-left: 5rem !important;
+        }
+        .corporate-training {
+            .pe-lg-10 {
+                padding-left: 2.5rem !important;
+                padding-right: 10px !important;
+            }
+            .ps-lg-10 {
+                padding-right: 2.5rem !important;
+                padding-left: 10px !important;
+            }
+        }
+    }
+}

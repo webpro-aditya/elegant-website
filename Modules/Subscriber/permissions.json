@@ -1,0 +1,9 @@
+[{
+    "label": "Subscriber",
+    "key": "subscriber",
+    "type": "admin",
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+}]

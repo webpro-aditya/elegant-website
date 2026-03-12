@@ -1,0 +1,54 @@
+//
+// Vendors customization
+//
+////////////////////////////////////////////////////////////////
+///////////// DO NOT MODIFY BELOW INCLUDE ORDER ////////////////
+////////////////////////////////////////////////////////////////
+// Initialize
+@import "init";
+// Plugins
+@import "vendors/plugins/plugins";
+//
+// Theme style
+//
+// Components
+@import "components/core-components";
+@import "components/components";
+// Layout
+@import "layout/base/layout";
+@import "layout/layout";
+
+
+#kt_app_sidebar_wrapper {
+    height: auto !important;
+}
+
+.app-header-secondary.app-header-mobile-drawer {
+    height: 50px;
+}
+div#kt_app_header {
+    height: 110px;
+    z-index: 9999;
+}
+div#fas_app_wrapper {
+    margin-top: 110px;
+}
+div#kt_app_sidebar {
+    top: 110px;
+}
+div#kt_app_toolbar {
+    margin-top: 20px;
+}
+table#listPages .menu-item a {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.menu-item a.menu-link.px-3 {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+.export [data-kt-export="pdf"] {
+    display: none !important;
+}

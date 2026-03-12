@@ -1,0 +1,101 @@
+.timer-container {
+    background: #F0F6FC;
+    .quiz-number {
+        color: #797979;
+        font-size: 18px;
+    }
+    .timer {
+        background-color: #fff !important;
+        height: 40px;
+        width: 110px;
+        border-radius: 5px;
+        text-align: center;
+        line-height: 37px;
+        font-size: 18px;
+        color: #797979;
+    }
+    .submit-btn {
+        background-color: #0f75bc !important;
+        color: #fff;
+        transition: 0.5s;
+        border-radius: 5px;
+        &:hover {
+            background-color: #0963a3 !important;
+            color: #fff;
+        }
+    }
+}
+
+.questian-container {
+    background: #F8F9F9;
+    h4 {
+        color: #4F4F4F;
+    }
+}
+
+.answer-container {
+    background: #F8F9F9;
+    .answer-list {
+        border: 1px solid #797979;
+        padding: 20px 10px;
+        margin: 10px 0px;
+        padding-left: 45px;
+        color: #4F4F4F;
+        cursor: pointer;
+        transition: 0.5s;
+        span {
+            background: #EAF1F6;
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            position: absolute;
+            left: 10px;
+            text-align: center;
+            top: 16px;
+            padding-top: 3px;
+            color: #000 !important;
+        }
+        &:hover {
+            background-color: #0F75BC !important;
+            color: #fff !important;
+        }
+    }
+    .selected {
+        background-color: #0F75BC !important;
+        color: #fff !important;
+    }
+}
+
+.btn-style {
+    border: 1px solid #0f75bc !important;
+    color: #0f75bc;
+    transition: 0.5s;
+    svg {
+        margin-top: -2px;
+    }
+    &:hover {
+        background-color: #0963a3;
+        color: #fff;
+        svg {
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+html:lang(ar) {
+    .btn-style {
+        svg {
+            transform: rotate(-180deg);
+        }
+    }
+    .answer-container {
+        .answer-list {
+            padding-left: 10px;
+            padding-right: 45px;
+            span {
+                left: auto;
+                right: 10px;
+            }
+        }
+    }
+}

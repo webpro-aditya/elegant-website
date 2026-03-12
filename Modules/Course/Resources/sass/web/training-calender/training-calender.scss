@@ -1,0 +1,118 @@
+@import "../../../../../../resources/sass/init";
+
+.calender-section {
+    table {
+        overflow: hidden;
+        border-radius: 15px 15px 0px 0px;
+
+        thead {
+            tr {
+                background: #0F75BC;
+
+                th {
+                    color: #fff !important;
+                }
+            }
+        }
+
+        tr {
+            background-color: #E6F1FA;
+            line-height: 32px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F4F9FD;
+        }
+    }
+
+    .register-now-link {
+        background: #EB2125 !important;
+        color: #fff !important;
+    }
+}
+
+.calender-section .table-responsive {
+    transform: rotateX(180deg);
+}
+
+.calender-section .table {
+    transform: rotateX(180deg);
+}
+
+span.select2-dropdown.select2-dropdown--below {
+    height: 350px;
+    overflow: auto;
+    width: 250px !important;
+}
+
+span.select2-selection.select2-selection--single.form-select.form-control-solid.mb-2 {
+    height: 41px;
+    border-radius: 3px;
+    border-right: 0;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 0 !important;
+}
+
+.select2-container {
+    width: 100% !important;
+    z-index: 9999;
+}
+
+.fv-row .select2-container {
+    width: 250px !important;
+}
+
+.select2-container--default .select2-results__option img {
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+span.select2-selection.select2-selection--single.form-control {
+    height: 41px;
+    padding: 0.775rem 0.3rem;
+}
+
+.select2-container .select2-results__options {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.cn-code .select2-container {
+    max-width: 90px !important;
+}
+
+.cn-code input[type=number] {
+    border-radius: 5px;
+    // border-left: 0;
+    height: 41px;
+}
+
+.cn-code .fv-plugins-icon-container {
+    width: 100%;
+}
+
+.cn-code .select2-container span.select2-selection.select2-selection--single.form-control {
+    border-radius: 5px;
+    width: 80px;
+}
+
+html:lang(ar) {
+    .cn-code .d-flex {
+        direction: ltr;
+    }
+
+    .cn-code input[type=number] {
+        text-align: end;
+    }
+
+    .select2-container {
+        width: auto !important;
+    }
+
+    .location-contr .select2 {
+        width: 100% !important;
+    }
+}

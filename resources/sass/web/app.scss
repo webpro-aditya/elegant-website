@@ -1,0 +1,638 @@
+@import "../init";
+@import "../components/core-components";
+// Layout
+@import "../layout/base/layout";
+@import "../layout/layout";
+@font-face {
+    font-family: "Lexend-Bold";
+    src: url("../../fonts/Lexend-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lexend-Medium";
+    src: url("../../fonts/Lexend-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Lexend-Regular";
+    src: url("../../fonts/Lexend-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lexend-Light";
+    src: url("../../fonts/Lexend-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lexend-SemiBold";
+    src: url("../../fonts/Lexend-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Thin";
+    src: url("../../fonts/Raleway-Thin.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Regular";
+    src: url("../../fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("../../fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Bold";
+    src: url("../../fonts/Raleway-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-ExtraBold";
+    src: url("../../fonts/Raleway-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-Medium";
+    src: url("../../fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Raleway-SemiBold";
+    src: url("../../fonts/Raleway-SemiBold.ttf");
+}
+
+@import "header";
+@import "footer";
+// ----COMMON-CSS----
+body {
+    font-family: "Lexend-Light";
+    font-size: 18px;
+}
+
+.main-padding {
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+.m-top {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 16px;
+    color: #797979;
+    line-height: 28px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ccc !important;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0f75bc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0f75bc;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Raleway-SemiBold";
+}
+
+h1 {
+    font-family: "Lexend-SemiBold";
+}
+
+.section-title {
+    margin-bottom: 30px;
+    h2 {
+        font-size: 36px;
+        font-family: "Raleway-Semibold";
+        margin-bottom: 15px;
+    }
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Firefox */
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.elegant-training-contents-area-button {
+    margin-top: 30px;
+    button {
+        background-color: #0f75bc !important;
+        color: #fff !important;
+        border: none;
+        border-radius: 6px;
+        padding: 8px 25px;
+        font-size: 16px;
+        height: 40px;
+        &:hover {
+            background-color: #0962a1 !important;
+        }
+    }
+}
+
+// Learning-Add-Section-Start---
+#learning_add_section {
+    margin: 40px 0px;
+    .learning-add-area {
+        padding: 50px;
+        background-color: #f0f1f2;
+        border-radius: 15px;
+        position: relative;
+        min-height: 450px;
+        .round-lg-image {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            max-width: 400px;
+        }
+        .round-sm-image {
+            position: absolute;
+            top: 60px;
+            left: 80px;
+            z-index: 1;
+        }
+        .learning-add-contents-col {
+            padding-right: 150px;
+            .learning-add-contents {
+                p {
+                    b {
+                        color: #000;
+                    }
+                    margin-bottom: 30px;
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 15px;
+                }
+                h3 {
+                    font-size: 18px;
+                    font-family: "Raleway-SemiBold";
+                    line-height: 28px;
+                    font-family: "Lexend-Regular";
+                    font-weight: 400;
+                    color: #000;
+                }
+                h2 {
+                    font-size: 48px;
+                    line-height: 58px;
+                    margin-bottom: 40px;
+                    font-family: "Raleway-SemiBold";
+                    color: #000;
+                }
+            }
+        }
+        .learning-add-image {
+            img {
+                z-index: 3;
+                position: absolute;
+                height: 450px;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+// Learning-Add-Section-End---
+// Testimonial-Section-Started---
+#testimonial_section {
+    .explore-online-course {
+        .explore-online-course-slider-area {
+            .testimonial {
+                .item {
+                    padding: 20px;
+                    border-radius: 15px;
+                    background-color: #fff;
+                    margin: 10px;
+                    box-shadow: 0px 0px 12px 0px #00000025;
+                    .explore-image-area {
+                        position: relative;
+                        height: 50px;
+                        .explore-main-image {
+                            width: 35px;
+                            height: 35px;
+                            object-fit: cover;
+                            margin-bottom: 15px;
+                            position: absolute;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                        color: #797979;
+                        line-height: 28px;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 5;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                        height: 168px;
+                        overflow-y: auto;
+                    }
+                    h3 {
+                        font-size: 18px;
+                        margin-bottom: 15px;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+                    a {
+                        display: flex;
+                        align-items: center;
+                        font-family: "Raleway-SemiBold";
+                        font-size: 16px;
+                        span {
+                            img {
+                                filter: invert(1) brightness(1);
+                                width: 15px;
+                            }
+                        }
+                    }
+                }
+                .owl-nav {
+                    position: absolute;
+                    top: -60px;
+                    right: 10px;
+                }
+                .owl-prev {
+                    font-size: 25px;
+                    border: 2px solid #443d3d;
+                    padding: 15px;
+                    border-radius: 5px;
+                    width: 40px;
+                    margin-right: 5px;
+                    transition: 0.2s;
+                    &:hover {
+                        background-color: #e9e9e9;
+                    }
+                }
+                .owl-next {
+                    font-size: 25px;
+                    border: 2px solid #443d3d;
+                    padding: 15px;
+                    border-radius: 5px;
+                    width: 40px;
+                    margin-left: 5px;
+                    transition: 0.2s;
+                    background-image: url();
+                    &:hover {
+                        background-color: #e9e9e9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Testimonial-Section-End---
+// ----COMMON-CSS----
+.breadcrumb-container {
+    background-color: #f0f6fc;
+    h1 {
+        font-family: "Raleway-Bold";
+        font-size: 36px;
+    }
+    ul {
+        width: max-content;
+        li {
+            list-style-type: none;
+            float: left;
+            margin: 0px 5px;
+            &:last-child {
+                color: #0f75bc;
+            }
+        }
+    }
+}
+
+.shadow1 {
+    box-shadow: 2px 4px 14px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+
+/*bottom-top*/
+
+#bottom-top {
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 60px;
+    right: 0px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+#bottom-top img {
+    width: 50px;
+}
+
+#bottom-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+#bottom-top {
+    margin: 30px;
+}
+
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 20px;
+    left: 5px;
+    z-index: 1000;
+    width: 70px;
+    /* increased from 50px */
+    height: 70px;
+    cursor: pointer;
+}
+
+.whatsapp-fixed img {
+    width: 100%;
+    height: 100%;
+    /* to fill the container */
+    object-fit: contain;
+    /* optional, keeps the image's aspect ratio */
+}
+
+
+/*bottom-top*/
+
+.social-media-section {
+    gap: 10px;
+    position: fixed;
+    right: 10px;
+    top: 150px;
+    z-index: 4;
+    display: grid;
+    text-align: center;
+    p {
+        transform: rotate(-90deg);
+        margin-top: 43px;
+        color: #171717;
+        font-family: "Lexend-SemiBold";
+    }
+}
+
+.btn-close {
+    background: transparent var(--bs-btn-close-bg) center / 1.75rem auto no-repeat;
+}
+
+.radius {
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+// Common-Responsive----
+@media (max-width: 1600px) {
+    .main-padding {
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+}
+
+@media (max-width: 1400px) {
+    #learning_add_section {
+        .learning-add-area {
+            .learning-add-image {
+                img {
+                    right: 20px;
+                }
+            }
+            .learning-add-contents-col {
+                .learning-add-contents {
+                    h2 {
+                        font-size: 38px;
+                        line-height: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .section-title {
+        h2 {
+            font-size: 24px;
+        }
+    }
+    p {
+        font-size: 14px;
+    }
+    #learning_add_section {
+        .learning-add-area {
+            padding-bottom: 0px;
+            .learning-add-image {
+                img {
+                    height: auto;
+                }
+            }
+            .learning-add-contents-col {
+                .learning-add-contents {
+                    h2 {
+                        font-size: 28px;
+                        line-height: 34px;
+                    }
+                }
+            }
+            img {
+                position: initial !important;
+            }
+            .learning-add-contents-col {
+                padding-right: 0;
+                h2 {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .round-lg-image {
+        display: none;
+    }
+    .round-sm-image {
+        display: none;
+    }
+    .breadcrumb-container {
+        h1 {
+            font-size: 28px;
+        }
+    }
+    #testimonial_section {
+        .explore-online-course {
+            .explore-online-course-slider-area {
+                .testimonial {
+                    // .owl-nav {
+                    //     top: 50%;
+                    //     right: auto;
+                    //     left: auto;
+                    //     width: 100%;
+                    //     span {
+                    //         font-weight: bold;
+                    //     }
+                    // }
+                    // .owl-prev {
+                    //     width: 30px;
+                    //     position: absolute;
+                    //     left: 0;
+                    //     background: #e3e3e3b0;
+                    //     border: none;
+                    // }
+                    // .owl-next {
+                    //     width: 30px;
+                    //     position: absolute;
+                    //     right: 0;
+                    //     background: #e3e3e3b0;
+                    //     border: none;
+                    // }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #offcanvasExample {
+        max-width: 90%;
+    }
+    .social-media-section {
+        display: none;
+    }
+    .main-padding {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .section-title {
+        h2 {
+            font-size: 21px;
+            padding-right: 110px;
+        }
+    }
+    #learning_add_section {
+        .learning-add-area {
+            padding: 20px;
+            padding-bottom: 0px;
+        }
+    }
+    .breadcrumb-container {
+        h1 {
+            font-size: 21px;
+        }
+    }
+    #testimonial_section {
+        .explore-online-course {
+            .explore-online-course-slider-area {
+                .testimonial {
+                    .item {
+                        p {
+                            height: 80px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+html:lang(ar) {
+    .social-media-section {
+        left: 0;
+        right: auto;
+    }
+    body {
+        direction: rtl;
+    }
+    .owl-carousel {
+        direction: ltr;
+    }
+    #testimonial_section {
+        .explore-online-course {
+            .explore-online-course-slider-area {
+                .testimonial {
+                    .item {
+                        a {
+                            direction: rtl;
+                            img {
+                                transform: rotate(180deg);
+                            }
+                        }
+                        .explore-image-area {
+                            .explore-main-image {
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #learning_add_section {
+        .learning-add-area {
+            .round-lg-image {
+                bottom: 5px;
+                right: auto;
+                left: -5px;
+                transform: rotate(90deg);
+            }
+            .round-sm-image {
+                left: auto;
+                right: 60px;
+            }
+            .learning-add-contents-col {
+                padding-left: 150px;
+                padding-right: 10px;
+            }
+        }
+    }
+    @media (max-width: 1440px) {
+        #learning_add_section .learning-add-area .learning-add-image img {
+            left: 20px;
+            right: auto;
+        }
+    }
+    @media (max-width: 991px) {
+        #learning_add_section {
+            .learning-add-area {
+                .learning-add-contents-col {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}

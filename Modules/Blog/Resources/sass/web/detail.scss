@@ -1,0 +1,101 @@
+@import "owl.carousel/dist/assets/owl.carousel.css";
+.blog-sidebar {
+    .guidance-list {
+        min-height: 135px;
+        padding-left: 160px;
+        img {
+            position: absolute;
+            left: 0;
+            width: 150px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+    .popular-container {
+        .popular-list {
+            min-height: 135px;
+            padding-left: 160px;
+            img {
+                position: absolute;
+                left: 0;
+                width: 150px;
+                height: 120px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+        }
+    }
+    ul {
+        li {
+            list-style-type: none;
+            a {
+                color: #797979;
+                font-size: 16px;
+                padding: 10px 0px;
+                display: inline-block;
+            }
+        }
+    }
+    p.content{
+        line-height: 28px;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        height: 112px;
+    }
+}
+
+.table-of-contents{
+    ul, ol{
+        a{
+            font-size: 16px;
+            color: #797979;
+            line-height: 28px;
+            font-family: "Lexend-Light";
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .blog-sidebar{
+        .popular-container{
+            .popular-list{
+                padding-left: 120px;
+                img{
+                    width: 110px;
+                }
+            } 
+        } 
+    } 
+}
+
+html:lang(ar) {
+    .blog-sidebar.ps-lg-15{
+        padding-left: 10px !important;
+        padding-right: 3.75rem !important;
+        .popular-container{
+            .popular-list{
+                padding-left: 0;
+                padding-right: 160px;
+                img {
+                    left: auto;
+                    right: 0;
+                }
+            } 
+        } 
+    }
+    @media (max-width: 767px) {
+        .blog-sidebar.ps-lg-15{
+            padding-right: 10px !important;
+            .popular-container{
+                .popular-list {
+                    padding-left: 0;
+                    padding-right: 120px;
+                }
+            } 
+        } 
+    }
+}

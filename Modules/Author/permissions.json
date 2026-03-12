@@ -1,0 +1,11 @@
+[
+    {
+        "label": "Author",
+        "key": "author",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    }
+]

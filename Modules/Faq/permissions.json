@@ -1,0 +1,9 @@
+[{
+    "label": "Faq",
+    "key": "faq",
+    "type": "admin",
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+}]

@@ -1,0 +1,21 @@
+[
+    {
+        "label": "Pages",
+        "key": "pages",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    },
+    {
+        "label": "Contents",
+        "key": "contents",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    }
+]
+

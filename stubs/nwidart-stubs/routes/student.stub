@@ -1,0 +1,9 @@
+<?php
+
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\$CONTROLLER_NAMESPACE$\Admin;
+
+use Illuminate\Support\Facades\Route;
+
+
+Route::middleware('auth:admin')->prefix('$LOWER_NAME$')->group(function () {
+});

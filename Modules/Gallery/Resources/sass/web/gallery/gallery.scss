@@ -1,0 +1,81 @@
+/* Styling the gallery section */
+
+#gallery-section {
+    padding-top: 40px;
+    /* Adjust the top padding */
+    padding-bottom: 40px;
+    // background-color: #f9f9f9;
+    /* Optional background color */
+}
+
+.grid-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/* Container for each gallery */
+
+.container {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+
+/* Styling for the heading */
+
+.gallery-heading {
+    font-size: 28px;
+    /* Adjust the heading size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: "Lexend-SemiBold";
+    /* Dark color for the heading */
+}
+
+
+/* Styling the gallery images section */
+
+.gallery-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    gap: 20px;
+    /* Spacing between images */
+}
+
+
+/* Styling for each image */
+
+.gallery-items img {
+    width: 100%;
+    height: 250px;
+    /* Fixed height for all images */
+    object-fit: cover;
+    /* Ensures images cover the space without distortion */
+    border-radius: 8px;
+    /* Optional rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional image shadow */
+    transition: transform 0.3s ease;
+    /* Add a transition for hover effect */
+}
+
+
+/* Responsive design for smaller screens */
+
+@media (max-width: 768px) {
+    .gallery-items {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 columns on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-items {
+        grid-template-columns: 1fr;
+        /* 1 column on very small screens */
+    }
+}

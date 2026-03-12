@@ -1,0 +1,15 @@
+<?php
+
+namespace Modules\Settings\Entities;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class State extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'name', 'country_id', 'state_code', 'type', 'latitude', 'longitude',
+    ];
+}

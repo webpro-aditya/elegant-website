@@ -1,0 +1,9 @@
+[
+    {
+        "label": "Enquiry",
+        "key": "enquiry",
+        "type": "admin",
+        "read": true,
+        "delete": true
+    }
+]

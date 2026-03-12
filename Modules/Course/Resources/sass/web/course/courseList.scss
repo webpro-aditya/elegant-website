@@ -1,0 +1,421 @@
+.course-list-container {
+    .categories-btn {
+        padding: 5px 20px;
+        background: #0f75bc !important;
+        border-radius: 3px;
+        color: #fff !important;
+        font-weight: 600;
+        letter-spacing: 1px;
+        &:hover {
+            background: #0b6aad !important;
+        }
+    }
+    .categories-btn:active {
+        background: #063e66 !important;
+        color: #fff !important;
+    }
+    .categories-btn:hover {
+        background: #063e66 !important;
+        color: #fff !important;
+    }
+    .sidebar-section {
+        border: 1px solid #cccccc;
+        border-radius: 15px;
+        padding: 20px;
+         ::-webkit-input-placeholder {
+            color: #0f75bc;
+        }
+         :-moz-placeholder {
+            color: #0f75bc;
+            opacity: 1;
+        }
+         ::-moz-placeholder {
+            color: #0f75bc;
+            opacity: 1;
+        }
+         :-ms-input-placeholder {
+            color: #0f75bc;
+        }
+         ::-ms-input-placeholder {
+            color: #0f75bc;
+        }
+         ::placeholder {
+            color: #0f75bc;
+        }
+        input[type="text"] {
+            padding: 10px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            width: 100%;
+            background: #eaf3fb;
+            color: #0f75bc;
+            outline: none;
+        }
+        .search-container {
+            border-bottom: 1px solid #b8cde0;
+            button {
+                float: right;
+                padding: 10px 15px;
+                margin-top: 8px;
+                // margin-right: 16px;
+                background: #0f75bc;
+                font-size: 17px;
+                border: none;
+                cursor: pointer;
+                position: absolute;
+                right: 0;
+                i {
+                    color: #fff;
+                }
+            }
+        }
+        .search-container button:hover {
+            background: #ccc;
+        }
+        .checkbox-container {
+            display: block;
+            position: relative;
+            padding-left: 42px;
+            margin-bottom: 8px;
+            margin-top: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 18px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+            color: #797979;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-radius: 5px;
+            &:hover {
+                background: #fde8e9;
+            }
+            // &:first-child {
+            //     margin-top: 0 !important;
+            // }
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+        }
+        .checkbox-container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+        .checkmark {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            height: 22px;
+            width: 22px;
+            border: 2px solid #797979;
+            border-radius: 3px;
+            transform: translate(-50%, -50%);
+        }
+        .checkbox-container:hover input~.checkmark {
+            background-color: #ccc;
+        }
+        .checkbox-container input:checked~.checkmark {
+            background-color: #eb2125;
+            border: none;
+        }
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+        .checkbox-container input:checked~.checkmark:after {
+            display: block;
+        }
+        .checkbox-container .checkmark:after {
+            left: 7px;
+            top: 2px;
+            width: 6px;
+            height: 13px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+    }
+    .pl-right {
+        padding-right: 170px;
+    }
+    .notification-container {
+        color: #eb2125;
+        background: #fce4e4;
+        width: max-content;
+        padding: 5px 10px;
+        border-radius: 10px;
+        font-size: 16px;
+    }
+    .list-grid-container {
+        position: absolute;
+        right: 0;
+        width: auto;
+    }
+    .course-list {
+        background: #ffffff;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.09);
+        border-radius: 10px;
+        img {
+            border-radius: 10px;
+        }
+        span {
+            color: #0f75bc;
+            background: #d2e5f3;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        h2 {
+            font-size: 16px;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .content {
+            font-size: 16px;
+            color: #797979;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            height: 72px;
+            font-family: sans-serif;
+            line-height: 24px;
+        }
+        .price-div {
+            color: #eb2125;
+            text-align: end;
+            font-size: 16px;
+            font-family: "Lexend-SemiBold";
+        }
+        img {
+            height: 150px;
+            object-fit: cover;
+        }
+    }
+    .content {
+        font-size: 16px;
+        color: #797979;
+        line-height: 28px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    button.grid-cn {
+        background: #0f75bc;
+        border-radius: 5px;
+        padding: 8px 15px;
+        border: none;
+        color: #fff;
+    }
+    button.list-cn {
+        border-radius: 5px;
+        padding: 8px 15px;
+        border: 1px solid #0f75bc;
+        color: #0f75bc;
+    }
+}
+
+.list {
+    .list-grid {
+        width: 100%;
+        a {
+            padding-left: 300px;
+            display: inline-block;
+            width: 100%;
+            img {
+                max-width: 280px;
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
+
+.sidebar-category {
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ccc !important;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0f75bc;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0f75bc;
+}
+
+@media (max-width: 1440px) {
+    .course-list-container {
+        .course-list {
+            img {
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .list {
+        .list-grid {
+            a {
+                padding-left: 120px;
+                img {
+                    max-width: 110px;
+                }
+            }
+        }
+    }
+    .course-list-container {
+        .pl-right {
+            padding-right: 0;
+            display: block;
+        }
+        .list-grid-container {
+            position: initial;
+            margin-top: 10px;
+        }
+    }
+    .course-list-container {
+        h1 {
+            font-size: 21px;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .list-grid {
+        width: 100%;
+    }
+}
+
+html:lang(ar) {
+    .list {
+        .list-grid {
+            a {
+                padding-left: 0px;
+                padding-right: 300px;
+                img {
+                    left: auto;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .course-list-container {
+        .list-grid-container {
+            right: auto;
+            left: 0;
+        }
+        .pl-right {
+            padding-left: 170px;
+            padding-right: 0;
+        }
+        // .course-list {
+        //     .price-div {
+        //         text-align: start;
+        //     }
+        // }
+        .sidebar-section {
+            .search-container {
+                button {
+                    right: auto;
+                    left: 0;
+                }
+            }
+            .checkbox-container {
+                padding-left: 0px;
+                padding-right: 42px;
+            }
+            .checkmark {
+                left: auto;
+                right: 10px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        .course-list-container {
+            .pl-right {
+                padding-right: 0 !important;
+                padding-left: 0 !important;
+            }
+        }
+        .list {
+            .list-grid {
+                a {
+                    padding-left: 0px;
+                    padding-right: 120px;
+                }
+            }
+        }
+    }
+}
+
+.loadmore {
+    background-color: #0f75bc !important;
+    /* Primary blue */
+    color: #fff !important;
+    /* White text */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Adjust padding for a balanced look */
+    font-size: 16px;
+    /* Set a readable font size */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: all 0.3s ease;
+    /* Smooth hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+
+.loadmore:hover {
+    // background-color: #0056b3 !important;
+    /* Darker blue on hover */
+    // box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Slightly deeper shadow */
+    // transform: translateY(-2px);
+    /* Lift effect */
+}
+
+.loadmore:active {
+    // background-color: #003f7f !important;
+    /* Even darker blue on click */
+    // transform: translateY(0);
+    /* Remove lift effect */
+    // box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+    /* Reduce shadow */
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}

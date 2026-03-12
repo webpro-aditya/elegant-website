@@ -1,0 +1,20 @@
+[
+    {
+        "label": "Courses",
+        "key": "course",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    },
+    {
+        "label": "Course category",
+        "key": "course_category",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    }
+]

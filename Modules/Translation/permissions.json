@@ -1,0 +1,9 @@
+[{
+    "label": "Translation",
+    "key": "translation",
+    "type": "admin",
+    "read": true,
+    "create": true,
+    "update": true,
+    "delete": true
+}]

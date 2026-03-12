@@ -1,0 +1,20 @@
+[
+    {
+        "label": "Roles and permission",
+        "key": "role",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    },
+    {
+        "label": "Users",
+        "key": "user",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    }
+]

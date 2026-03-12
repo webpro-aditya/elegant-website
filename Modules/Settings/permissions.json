@@ -1,0 +1,9 @@
+[{
+        "label": "Settings",
+        "key": "settings",
+        "type": "admin",
+        "read": true,
+        "update": true
+    }
+
+]

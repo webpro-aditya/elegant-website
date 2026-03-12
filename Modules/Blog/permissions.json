@@ -1,0 +1,19 @@
+[{
+        "label": "Blog",
+        "key": "blog",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    },
+    {
+        "label": "Blog Category",
+        "key": "blog_category",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    }
+]

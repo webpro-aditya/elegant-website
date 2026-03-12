@@ -1,0 +1,23 @@
+{
+    "name": "nwidart/settings",
+    "description": "",
+    "authors": [
+        {
+            "name": "Thahaneen Ipix",
+            "email": "thahaneen@ipixsolutions.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Settings\\": ""
+        }
+    }
+}

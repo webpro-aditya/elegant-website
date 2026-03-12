@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg1689" width="682.66669" height="682.66669" viewBox="0 0 682.66669 682.66669">
+  <defs id="defs1693">
+    <clipPath clipPathUnits="userSpaceOnUse" id="clipPath1715">
+      <path d="M 0,512 H 512 V 0 H 0 Z" id="path1713"/>
+    </clipPath>
+  </defs>
+  <mask id="custom"><rect id="bg" x="0" y="0" width="100%" height="100%" fill="white"/><g transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)"><path d="M 98.333,361.351 H 15.049 v 83.284 h 83.284 z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1697"/><path d="M 497,361.351 H 164.333 v 83.284 H 497 Z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1699"/><path d="M 98.333,214.358 H 15.049 v 83.284 h 83.284 z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1701"/><path d="M 497,214.358 H 164.333 v 83.284 H 497 Z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1703"/><path d="M 98.333,67.365 H 15.049 v 83.284 h 83.284 z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1705"/><path d="M 497,67.365 H 164.333 v 83.284 H 497 Z" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1707"/></g></mask><g mask="url(#custom)"><g id="g1695" transform="matrix(1.3333333,0,0,-1.3333333,0,682.66667)">
+    <path d="M 98.333,361.351 H 15.049 v 83.284 h 83.284 z" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1697"/>
+    <path d="M 497,361.351 H 164.333 v 83.284 H 497 Z" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1699"/>
+    <path d="M 98.333,214.358 H 15.049 v 83.284 h 83.284 z" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1701"/>
+    <path d="M 497,214.358 H 164.333 v 83.284 H 497 Z" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1703"/>
+    <path d="M 98.333,67.365 H 15.049 v 83.284 h 83.284 z" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1705"/>
+    <path d="M 497,67.365 H 164.333 v 83.284 H 497 Z" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none" id="path1707"/>
+    <g id="g1709">
+      <g id="g1711" clip-path="url(#clipPath1715)">
+        <path d="M 98.333,361.351 H 15.049 v 83.284 h 83.284 z" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" id="path1717"/>
+        <path d="M 497,361.351 H 164.333 v 83.284 H 497 Z" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" id="path1719"/>
+        <path d="M 98.333,214.358 H 15.049 v 83.284 h 83.284 z" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" id="path1721"/>
+        <path d="M 497,214.358 H 164.333 v 83.284 H 497 Z" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" id="path1723"/>
+        <path d="M 98.333,67.365 H 15.049 v 83.284 h 83.284 z" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" id="path1725"/>
+        <path d="M 497,67.365 H 164.333 v 83.284 H 497 Z" style="fill:none;stroke:#000000;stroke-width:30;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" id="path1727"/>
+      </g>
+    </g>
+  </g></g>
+</svg>

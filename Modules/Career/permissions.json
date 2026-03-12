@@ -1,0 +1,27 @@
+[
+    {
+        "label": "Career",
+        "key": "career",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    },
+    {
+        "label": "Career Category",
+        "key": "career_category",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    },
+    {
+        "label": "Career Applicants",
+        "key": "career_applicant",
+        "type": "admin",
+        "read": true,
+        "view": true
+    }
+]

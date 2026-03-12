@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/resources",
+    "description": "",
+    "authors": [
+        {
+            "name": "Thahaneen Ipix",
+            "email": "thahaneen@ipixsolutions.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Resources\\": "",
+            "Modules\\Resources\\App\\": "app/",
+            "Modules\\Resources\\Database\\Factories\\": "database/factories/",
+            "Modules\\Resources\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\Resources\\Tests\\": "tests/"
+        }
+    }
+}

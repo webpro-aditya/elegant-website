@@ -1,0 +1,74 @@
+@import "../../../../../../resources/sass/init";
+.team-members {
+    background-color: #F0F6FC;
+    .nav-link.active {
+        background-color: #EB2125 !important;
+        color: #fff !important;
+    }
+    ul {
+        li {
+            list-style-type: none;
+            float: left;
+            margin-right: 15px;
+            button {
+                color: #000 !important;
+                font-family: "Lexend-Regular";
+            }
+        }
+    }
+    .skills-list {
+        li {
+            background: #E1EEF9;
+            color: #797979;
+            border-radius: 5px;
+            padding: 8px 15px;
+        }
+    }
+    .apply-now {
+        background: #0F75BC;
+        color: #fff;
+        &:hover{
+            background: #0a65a7;
+        }
+    }
+    .experience {
+        background: #E1EEF9;
+        color: #797979;
+    }
+}
+
+h2 {
+    font-family: "Raleway-SemiBold";
+    font-size: 36px;
+}
+
+@media (max-width: 991px) {
+    .tab-content>.tab-pane {
+        display: block;
+        opacity: 1;
+    }
+    .team-members{
+        h2{
+            font-size: 24px;
+        }
+    }
+}
+
+
+html:lang(ar) { 
+    .team-members{
+        ul{
+            li{
+                float: right;
+                margin-right: 0;
+                margin-left: 15px;
+            }
+        } 
+    } 
+    #category-form{
+        .me-3 {
+            margin-right: 0 !important;
+            margin-left: 10px;
+        }
+    } 
+}

@@ -1,0 +1,179 @@
+@import "owl.carousel/dist/assets/owl.carousel.css";
+
+
+
+
+#explore_online_course_section {
+    background-color: #f0f1f2;
+    padding: 50px 0px;
+    .explore-online-course {
+        .explore-online-course-slider-area {
+            .explore {
+                .item {
+                    padding: 15px;
+                    border-radius: 15px;
+                    background-color: #fff;
+                    .explore-image-area {
+                        position: relative;
+                        .explore-main-image {
+                            border-radius: 15px;
+                            margin-bottom: 20px;
+                            height: 280px;
+                            object-fit: cover;
+                        }
+                        .image-overlay-text {
+                            background-color: #0f75bc;
+                            padding: 0px 15px;
+                            border-radius: 4px;
+                            position: absolute;
+                            right: 15px;
+                            top: 15px;
+                            p {
+                                color: #fff;
+                                margin: 0;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    h3 {
+                        font-size: 20px;
+                        margin-bottom: 20px;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+                    .explore-slider-bottom-icons {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        font-family: "Lexend-Regular";
+                        a {
+                            display: flex;
+                            align-items: center;
+                            img {
+                                width: auto !important;
+                            }
+                            span {
+                                color: #797979;
+                            }
+                        }
+                    }
+                }
+                .owl-nav {
+                    position: absolute;
+                    top: -60px;
+                    right: 0px;
+                }
+                .owl-prev {
+                    font-size: 25px;
+                    border: 1px solid #443d3d;
+                    padding: 15px;
+                    border-radius: 5px;
+                    width: 40px;
+                    margin-right: 5px;
+                    transition: 0.2s;
+                    &:hover {
+                        background-color: #e9e9e9;
+                    }
+                }
+                .owl-next {
+                    font-size: 25px;
+                    border: 1px solid #443d3d;
+                    padding: 15px;
+                    border-radius: 5px;
+                    width: 40px;
+                    margin-left: 5px;
+                    transition: 0.2s;
+                    background-image: url();
+                    &:hover {
+                        background-color: #e9e9e9;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 991px) {
+    #explore_online_course_section {
+        .explore-online-course {
+            .section-title {
+                padding-right: 75px;
+            }
+            .explore-online-course-slider-area {
+                .explore {
+                    .owl-prev {
+                        width: 30px;
+                    }
+                    .owl-next {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+    #explore_online_course_section {
+        .explore-online-course {
+            .explore-online-course-slider-area {
+                .explore {
+                    .item {
+                        h3 {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+html:lang(ar) { 
+    #explore_online_course_section{
+        .explore-online-course{
+            .explore-online-course-slider-area{
+                .explore{
+                    .item{
+                        h3{
+                            text-align: right;
+                        }
+                        .explore-slider-bottom-icons{
+                            direction: rtl;
+                        }
+                        .explore-image-area{
+                            .image-overlay-text {
+                                right: auto;
+                                left: 15px;
+                            }
+                        } 
+                    } 
+                } 
+            } 
+        } 
+    } 
+    
+    @media (max-width: 991px) {
+        #training_numbers_section .training-numbers-area .training-numbers-area .right-border{
+            border: none;
+        }
+        #explore_online_course_section {
+            .explore-online-course {
+                .section-title {
+                    padding-right: 0px;
+                    padding-left: 75px;
+                }
+            }
+        }
+    }
+}

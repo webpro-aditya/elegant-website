@@ -1,0 +1,113 @@
+span.select2-dropdown.select2-dropdown--below {
+    height: 350px;
+    overflow: auto;
+    width: 250px !important;
+}
+
+span.select2-selection.select2-selection--single.form-select.form-control-solid.mb-2 {
+    height: 41px;
+    border-radius: 3px;
+    border-right: 0;
+}
+
+.country-code .select2-container .select2-selection--single .select2-selection__rendered {
+    padding: 0 !important;
+}
+
+.country-code .select2-container {
+    width: 90px !important;
+}
+
+.contact-form {
+    input,
+    textarea {
+        border: 1px solid #D3D3D3;
+        border-radius: 5px;
+        height: 41px;
+        padding: 0px 10px;
+        color: #797979;
+    }
+    input#number {
+        border-radius: 0px 5px 5px 0px;
+    }
+    label {
+        color: #797979;
+    }
+    textarea {
+        height: 100px;
+        padding-top: 5px;
+    }
+    .submit-btn {
+        border-radius: 5px;
+        background-color: #0F75BC;
+        color: #fff;
+        width: 100px;
+    }
+    .country-code span.select2-selection.select2-selection--single.form-control {
+        border-radius: 5px 0px 0px 5px;
+        border-right: 0;
+    }
+}
+
+h2 {
+    font-family: "Raleway-SemiBold";
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+.contact-information {
+    background-color: #F0F6FC;
+    .border-div {
+        border-bottom: 1px solid #D9D9D9;
+        margin-bottom: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.select2-container--default .select2-results__option img {
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+.country-code span.select2-selection.select2-selection--single.form-control {
+    height: 41px;
+    padding: 0.775rem 0.3rem;
+}
+
+.select2-container .select2-results__options {
+    max-height: 300px;
+    /* Adjust this height as needed */
+    overflow-y: auto;
+}
+
+.select2-selection {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    h2 {
+        font-size: 21px;
+    }
+}
+
+html:lang(ar) {
+    .country-code .d-flex {
+        direction: ltr;
+    }
+    select#subject {
+        direction: ltr;
+    }
+    input#number {
+        text-align: end;
+    }
+}

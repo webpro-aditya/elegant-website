@@ -1,0 +1,61 @@
+@import '~jstree/dist/themes/default/style.css';
+.jstree-default .jstree-node,
+.jstree-default .jstree-icon {
+    background-image: url(/images/admin/jstree/32px.png);
+}
+
+.jstree-node {
+    line-height: 37px !important;
+    color: #7e8299;
+    padding: 0px 5px;
+}
+
+.jstree-hovered {
+    transition: color 0.2s ease !important;
+    background-color: var(--kt-primary-light) !important;
+    color: var(--kt-primary) !important;
+}
+
+.jstree-default .jstree-closed>.jstree-ocl {
+    background-position: -100px -1px !important;
+}
+
+.jstree-default .jstree-checkbox {
+    background-position: -164px -8px !important;
+}
+
+.filters .jstree-default .jstree-closed>.jstree-ocl {
+    background-position: -100px 0px !important;
+}
+
+.jstree-default .jstree-leaf>.jstree-ocl {
+    width: 10px !important;
+}
+
+.jstree-default.jstree-checkbox-selection .jstree-clicked>.jstree-checkbox,
+.jstree-default .jstree-checked>.jstree-checkbox {
+    background-position: -228px -8px !important;
+}
+
+.jstree-anchor {
+    line-height: normal !important;
+    height: auto !important;
+    box-shadow: none !important;
+    padding: 0.65rem 1rem !important;
+}
+
+.jstree-default .jstree-wholerow-clicked {
+    background: #00000000;
+    background: -webkit-linear-gradient(top, #00000000 0%, #00000000 100%);
+    background: linear-gradient(to bottom, #00000000 0%, #00000000 100%);
+}
+
+.jstree-default-responsive .jstree-wholerow-clicked {
+    background: #00000000;
+}
+
+.jstree-default .jstree-clicked {
+    background: #00000000;
+    border-radius: 2px;
+    box-shadow: inset 0 0 1px #999999;
+}

@@ -1,0 +1,11 @@
+[
+    {
+        "label": "Seo",
+        "key": "seo",
+        "type": "admin",
+        "read": true,
+        "create": true,
+        "update": true,
+        "delete": true
+    }
+]

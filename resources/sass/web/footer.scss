@@ -1,0 +1,212 @@
+#footer_section {
+    background-color: #f8f9f9;
+    padding: 50px 0;
+    padding-bottom: 40px;
+    a {
+        font-family: "Lexend-Light";
+    }
+    p {
+        font-size: 14px;
+    }
+    .footer-area {
+        .footer-logo-description-area {
+            .footer-logo-img {
+                margin-bottom: 15px;
+                width: 170px;
+            }
+            p {
+                color: #797979;
+                line-height: 25px;
+            }
+            .footer-stay-up {
+                margin: 30px 0;
+            }
+            .footer-mail-input {
+                position: relative;
+                margin-right: 30px;
+                input {
+                    border: 1px solid #d9d9d9;
+                    padding: 13px 15px;
+                    border-radius: 30px;
+                    width: 100%;
+                    &::placeholder {
+                        color: #797979;
+                        font-size: 15px;
+                    }
+                    &:focus-visible {
+                        outline: 1px solid #000000;
+                    }
+                }
+                .btn-img {
+                    position: absolute;
+                    right: 0;
+                    cursor: pointer;
+                    transition: 0.2s;
+                    &:hover {
+                        scale: 1.1;
+                        filter: drop-shadow(2px 4px 6px #00000021);
+                    }
+                }
+            }
+        }
+        .footer-list {
+            h3 {
+                font-size: 21px;
+                margin-bottom: 20px;
+                padding-top: 10px;
+            }
+            ul {
+                padding-left: 0;
+                padding-right: 0;
+                li {
+                    list-style-type: none;
+                    line-height: 25px;
+                    a {
+                        font-size: 14px;
+                        color: #797979;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#footer-bottom-section {
+    padding: 30px 0;
+    background-color: #F0F1F2;
+    .footer-bottom-contents-area {
+        .footer-bottom-courses-list-area {
+            h3 {
+                margin-bottom: 20px;
+                font-size: 16px;
+            }
+            button {
+                font-size: 13px;
+                border: none;
+                padding: 7px 10px;
+                background-color: #FFFFFF;
+                color: #797979;
+                border-radius: 4px;
+                box-shadow: 2px 2px 1px 0px #7979791c;
+            }
+        }
+    }
+}
+
+.enquire-form {
+    input,
+    textarea,
+    select {
+        border: 1px solid #D3D3D3;
+        border-radius: 5px;
+        height: 40px;
+        padding: 0px 10px;
+        color: #797979;
+    }
+    label {
+        color: #797979;
+    }
+    textarea {
+        height: 100px;
+        padding-top: 5px;
+    }
+    .submit-btn {
+        border-radius: 5px;
+        background-color: #0F75BC;
+        color: #fff;
+        width: 100px;
+    }
+}
+
+.social-icons-footer {
+    a {
+        margin-right: 10px;
+    }
+}
+
+.phone-mail {
+    p {
+        padding-left: 25px;
+        svg {
+            position: absolute;
+            left: 0;
+            top: 6px;
+        }
+    }
+    a {
+        font-weight: bold;
+        font-size: 15px;
+    }
+}
+
+svg.ph-icon {
+    top: 2px !important;
+}
+
+@media (max-width: 1199px) {
+    #footer_section {
+        .footer-area {
+            .footer-list {
+                h3 {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    #footer_section {
+        padding: 10px 0;
+        padding-bottom: 125px;
+    }
+}
+
+@media (max-width: 450px) {
+    .footer-menu {
+        width: 100%;
+        text-align: center;
+    }
+    #footer-bottom-section {
+        text-align: center;
+    }
+    .phone-mail {
+        p {
+            svg {
+                position: initial;
+                margin-top: -7px;
+            }
+        }
+    }
+}
+
+html:lang(ar) {
+    .phone-mail {
+        p {
+            padding-left: 0;
+            padding-right: 25px;
+            svg {
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+    #footer_section {
+        .footer-area {
+            .footer-logo-description-area {
+                .footer-mail-input {
+                    margin-right: 0;
+                    img {
+                        right: auto;
+                        left: 0;
+                        transform: rotate(-90deg);
+                    }
+                    .btn-img {
+                        left: 0;
+                        right: auto;
+                    }
+                }
+            }
+        }
+    }
+}
