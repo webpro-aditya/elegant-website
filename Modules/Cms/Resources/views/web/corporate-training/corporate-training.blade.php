@@ -11,6 +11,9 @@
 
 @section('canonical', url()->current())
 
+@push('head_info')
+{!! $contents['corporate-training']->seo->head_info ?? '' !!}
+@endpush
 
 @push('style')
     <link rel="stylesheet" type="text/css" href="{{ mix('css/web/corporate-training/corporate-training.css') }}">

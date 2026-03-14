@@ -9,6 +9,10 @@
 
 @section('title', 'Contact Us')
 
+@push('head_info')
+{!! $contents['contact-us']->seo->head_info ?? '' !!}
+@endpush
+
 @push('script')
     <script src="{{ mix('js/web/contactus.js') }}"></script>
     <script>

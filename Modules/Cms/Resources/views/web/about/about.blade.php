@@ -11,6 +11,10 @@
 
 @section('canonical', url()->current())
 
+@push('head_info')
+{!! $contents['about-us-1']->seo->head_info ?? '' !!}
+@endpush
+
 @push('style')
     <link rel="stylesheet" type="text/css" href="{{ mix('css/web/about/about.css') }}">
 @endpush

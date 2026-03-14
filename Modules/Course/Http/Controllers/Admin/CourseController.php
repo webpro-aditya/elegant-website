@@ -321,6 +321,7 @@ class CourseController extends Controller
             'meta_contents' => $request->meta_contents,
             'model' => $request->model,
             'canonical_tag_url' => $request->canonical_tag_url,
+            'head_info' => $request->head_info,
             'model_id' => $course->id,
         ];
 

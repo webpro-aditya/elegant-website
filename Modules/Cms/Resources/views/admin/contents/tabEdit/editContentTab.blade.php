@@ -84,19 +84,19 @@
         @endif
 
         @if (in_array('job_profile', $fields))
-        <div class="mb-3 language-input" data-language="{{ $id }}">
-            <label for="job_profile_{{ $language }}" class="form-label ">Job Profile
-                ({{ $language }})</label>
-            <input type="text" class="form-control" 
-                id="job_profile_{{ $language }}" name="job_profile[{{ strtolower($language) }}]"
-                value="{{ old('job_profile.' . $languageCode) ?? ($contentLocale->job_profile ?? '') }}"
-                placeholder="Job Profile ({{ $language }})" data-kt-tagify-input="true">
+            <div class="mb-3 language-input" data-language="{{ $id }}">
+                <label for="job_profile_{{ $language }}" class="form-label ">Job Profile
+                    ({{ $language }})</label>
+                <input type="text" class="form-control" 
+                    id="job_profile_{{ $language }}" name="job_profile[{{ strtolower($language) }}]"
+                    value="{{ old('job_profile.' . $languageCode) ?? ($contentLocale->job_profile ?? '') }}"
+                    placeholder="Job Profile ({{ $language }})" data-kt-tagify-input="true">
 
-            @error('job_profile.' . strtolower($language))
-                <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
-            @enderror
-        </div>
-    @endif
+                @error('job_profile.' . strtolower($language))
+                    <div class="fv-plugins-message-container invalid-feedback"> {{ $message }} </div>
+                @enderror
+            </div>
+        @endif
         </div>
     @endforeach
 

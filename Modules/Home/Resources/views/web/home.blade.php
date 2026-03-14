@@ -9,6 +9,10 @@
 
 @section('title', 'Home')
 
+@push('head_info')
+{!! $contents['elegant-training-1']->seo->head_info ?? '' !!}
+@endpush
+
 @push('style')
     <link rel="stylesheet" type="text/css" href="{{ mix('css/web/home/home.css') }}">
 @endpush

@@ -40,7 +40,8 @@ class SeoHelper
                 'meta_title'       => $input['meta_title'] ?? null,
                 'meta_description' => $input['meta_description'] ?? null,
                 'meta_contents'    => $input['meta_contents'] ?? null,
-                'canonical_tag_url' => $input['canonical_tag_url'] ?? null
+                'canonical_tag_url' => $input['canonical_tag_url'] ?? null,
+                'head_info' => $input['head_info'] ?? null
             ]);
         }
 
@@ -51,7 +52,7 @@ class SeoHelper
                     'model'    => $input['model'],
                     'model_id' => $input['model_id'],
                 ],
-                Arr::only($input, ['meta_title', 'meta_description', 'meta_contents', 'canonical_tag_url'])
+                Arr::only($input, ['meta_title', 'meta_description', 'meta_contents', 'canonical_tag_url', 'head_info'])
             );
         }
 

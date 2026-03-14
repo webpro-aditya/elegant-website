@@ -30,10 +30,16 @@
                         class="form-control min-h-200px mb-2">{{ old('meta_contents', $seo->meta_contents) }}</textarea>
                 </div>
                 
-                 <div class="mb-10 fv-row fv-plugins-icon-container">
+                <div class="mb-10 fv-row fv-plugins-icon-container">
                     <label class="form-label">Canonical Tag URL</label>
                     <textarea id="canonical_tag_url" name="canonical_tag_url" 
                         class="form-control min-h-100px mb-2">{{ old('canonical_tag_url', $seo->canonical_tag_url) }}</textarea>
+                </div>
+
+                <div class="mb-10 fv-row fv-plugins-icon-container">
+                    <label class="form-label">Head</label>
+                    <textarea id="head_info" name="head_info" 
+                        class="form-control min-h-200px mb-2">{{ old('head_info', $seo->head_info) }}</textarea>
                 </div>
 
                 @if (isset($type))

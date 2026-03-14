@@ -23,6 +23,7 @@
     <link href="{{ mix('css/layouts/web/plugins.css') }}" rel="stylesheet" type="text/css" />
     <link href="{{ mix('css/layouts/web/app.css') }}" rel="stylesheet" type="text/css" />
 
+    @stack('head_info')
     @stack('style')
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">

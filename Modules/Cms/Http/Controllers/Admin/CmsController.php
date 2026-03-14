@@ -392,6 +392,8 @@ class CmsController extends Controller
                 'id' => $request->seo_id,
                 'meta_title' => $request->meta_title,
                 'meta_description' => $request->meta_description,
+                'canonical_tag_url' => $request->canonical_tag_url,
+                'head_info' => $request->head_info,
                 'meta_contents' => $request->meta_contents,
                 'model' => $request->model,
                 'model_id' => $content->id,

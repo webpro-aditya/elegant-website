@@ -7,8 +7,12 @@
     @section('meta_description', "Explore exciting job opportunities at Elegant Training Center in Dubai. We're hiring passionate and skilled professionals to join our growing education team.")
 @endif
 
-    @section('title', app()->getLocale() == 'en' ? $translations['we_are_hiring']['value_en'] : $translations['we_are_hiring']['value_ar'])
-    @section('canonical', url()->current())
+@section('title', app()->getLocale() == 'en' ? $translations['we_are_hiring']['value_en'] : $translations['we_are_hiring']['value_ar'])
+@section('canonical', url()->current())
+
+@push('head_info')
+{!! $contents['hiring']->seo->head_info ?? '' !!}
+@endpush
 
 @push('style')
     <link rel="stylesheet" type="text/css" href="{{ mix('css/web/hiring/hiring.css') }}">

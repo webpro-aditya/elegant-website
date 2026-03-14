@@ -18,7 +18,7 @@ class Seo extends Model
     | GLOBAL VARIABLES
     |--------------------------------------------------------------------------
     */
-    protected $fillable = [ 'meta_title',  'meta_description', 'meta_contents', 'canonical_tag_url', 'model','model_id', 'google_analytics_footer', 'google_analytics_head', 'google_analytics_body'];
+    protected $fillable = [ 'meta_title',  'meta_description', 'meta_contents', 'canonical_tag_url', 'head_info', 'model','model_id', 'google_analytics_footer', 'google_analytics_head', 'google_analytics_body'];
 
     protected $table = 'seo';
     
