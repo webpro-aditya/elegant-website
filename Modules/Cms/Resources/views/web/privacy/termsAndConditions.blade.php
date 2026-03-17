@@ -1,5 +1,14 @@
-@section('meta_title',  'Terms & Conditions | Elegant Training Center Dubai')
-@section('meta_description', "Understand the terms and conditions of using Elegant Training Center’s website and services. This includes user responsibilities, course enrollment policies, and more.")
+
+
+@if ($contents['terms-and-conditions']->seo)
+    @section('meta_tags', $contents['terms-and-conditions']->seo->meta_contents)
+    @section('meta_title', $contents['terms-and-conditions']->seo->meta_title)
+    @section('meta_description', $contents['terms-and-conditions']->seo->meta_description)
+@else
+    @section('meta_title',  'Terms & Conditions | Elegant Training Center Dubai')
+    @section('meta_description', "Understand the terms and conditions of using Elegant Training Center’s website and services. This includes user responsibilities, course enrollment policies, and more.")
+@endif
+
 @section('title', 'Terms and Conditions')
 
 @push('script')

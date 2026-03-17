@@ -1,5 +1,12 @@
-@section('meta_title',  'Privacy Policy | Elegant Training Center Dubai')
-@section('meta_description', "Review the privacy practices of Elegant Training Center. Learn how we handle user data, cookies, and personal information submitted through our website.")
+@if ($contents['privacy-policy']->seo)
+    @section('meta_tags', $contents['privacy-policy']->seo->meta_contents)
+    @section('meta_title', $contents['privacy-policy']->seo->meta_title)
+    @section('meta_description', $contents['privacy-policy']->seo->meta_description)
+@else
+    @section('meta_title',  'Privacy Policy | Elegant Training Center Dubai')
+    @section('meta_description', "Review the privacy practices of Elegant Training Center. Learn how we handle user data, cookies, and personal information submitted through our website.")
+@endif
+
 @section('title', 'Privacy Policy')
 
 @push('script')
