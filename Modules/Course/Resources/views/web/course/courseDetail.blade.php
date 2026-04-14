@@ -1,16 +1,20 @@
 @section('title', 'Course Details')
 
 @if ($courseData->seo)
-@section('meta_title', $courseData->seo->meta_title)
-@section('meta_description', $courseData->seo->meta_description)
-@section('meta_contents')
-        {!! $courseData->seo->meta_contents !!}
-@endsection
+    @section('meta_title', $courseData->seo->meta_title)
+    @section('meta_description', $courseData->seo->meta_description)
+    @section('meta_contents')
+            {!! $courseData->seo->meta_contents !!}
+    @endsection
 @endif
 @section('canonical', $courseData->seo->canonical_tag_url ?? url()->current())
 
 @push('style')
     <link rel="stylesheet" type="text/css" href="{{ mix('css/web/course/courseDetail.css') }}">
+@endpush
+
+@push('head_info')
+{!! $courseData->seo->head_info ?? '' !!}
 @endpush
 
 @push('script')
